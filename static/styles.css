@@ -1,0 +1,64 @@
+html {
+    min-height: 100%;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, #ffcb05, #2a75bb);
+    color: #555555;
+    font-size: 1em;
+    font-family: "Quicksand";
+    background-attachment: fixed;
+  }
+
+  h1 {
+    color: #3c5aa6;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+
+  .container {
+    height: 200px;
+    position: relative;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .top_right {
+    margin: 0;
+    position: absolute;
+
+    left: 100%;
+    -ms-transform: translate(25%, 25%);
+    transform: translate(80%, -45%);
+  }
+
+  .top_left {
+    margin: 0;
+    position: absolute;
+
+    left: -485%;
+    -ms-transform: translate(25%, 25%);
+    transform: translate(80%, -170%);
+    scale: 40%; 
+  }
+
+  .top_gen_right {
+    margin: 0;
+    position: absolute;
+
+    left: 60%;
+    -ms-transform: translate(25%, 25%);
+    transform: translate(80%, -70%);
+    scale: 170%
+  }
+
+
+  
+  
