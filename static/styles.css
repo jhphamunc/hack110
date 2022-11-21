@@ -16,8 +16,23 @@ html {
     font-family: 'Courier New', monospace;
   }
 
+  h2 {
+    color: #3c5aa6;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    color: #3c5aa6;
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+
+    }
+
   .container {
-    height: 200px;
+    height: 400px;
     position: relative;
   }
   
@@ -27,7 +42,7 @@ html {
 
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 20%);
   }
 
   .top_right {
@@ -36,7 +51,7 @@ html {
 
     left: 100%;
     -ms-transform: translate(25%, 25%);
-    transform: translate(80%, -45%);
+    transform: translate(50%, -45%);
   }
 
   .top_left {
@@ -45,20 +60,57 @@ html {
 
     left: -485%;
     -ms-transform: translate(25%, 25%);
-    transform: translate(80%, -170%);
+    transform: translate(70%, -170%);
     scale: 40%; 
   }
 
-  .top_gen_right {
+    /* .top_gen_right {
+        margin: 0;
+        position: absolute;
+
+        left: 60%;
+        -ms-transform: translate(25%, 25%);
+        transform: translate(80%, -80%);
+        scale: 170%
+  } */
+
+  h3 {
+    margin: 0;
+    position: absolute;
+    color: #3d7094;
+    font-family: 'Courier New', monospace;
+
+    left: -8%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(50%, 500%);
+
+  }    
+
+  /* .bottom_gen_right {
     margin: 0;
     position: absolute;
 
     left: 60%;
     -ms-transform: translate(25%, 25%);
-    transform: translate(80%, -70%);
+    transform: translate(100, -80%);
     scale: 170%
+  } */
+
+  #pokemon1 {
+    position: absolute;
+    object-position: top right;
+    top: -55px;
+    left: 90px;
+    scale: 150%
+    
   }
 
+  #pokemon2 {
+    position: absolute;
 
+    bottom: -80px;
+    right: 80px;
+    scale: 150%
+  }
   
   

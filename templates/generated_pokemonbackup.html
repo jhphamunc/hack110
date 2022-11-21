@@ -2,15 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-83">
-        <h1 style="font-size:5vw">Pokémon Generator</h1>
-        <h3 style="font-size:3vw">By Fisher Ramsey and Joseph Pham</h3>
+        <h1 style="font-size:5vw">Pokémon Generated!</h1>
         <link rel="stylesheet" href="/static/bootstrap.min.css">
         <link rel="stylesheet" href="/static/styles.css">
         <style>
             .button {
               display: inline-block;
               padding: 15px 25px;
-              font-size: 30px;
+              font-size: 22px;
               font-family: "Courier New", monospace;
               cursor: pointer;
               text-align: center;
@@ -57,17 +56,16 @@
     </nav> -->
     
         <div class="container">
-            <!-- <h2>POKÉMON GALORE!</h2> -->
-           <!-- <p>Github: <a href="https://github.com/meghansun322/api-workshop-demo">https://github.com/meghansun322/api-workshop-demo</a></p>
-           <p>Slides: <a href="https://docs.google.com/presentation/d/1n4J7Jqnf_EXt_C7HQ5yBkucZu9Lt6x9tEMWnZzb_Cr4/edit?usp=sharing">https://docs.google.com/presentation/d/1n4J7Jqnf_EXt_C7HQ5yBkucZu9Lt6x9tEMWnZzb_Cr4/edit?usp=sharing</a></p>  -->
-            <div class="center">
-                <button class=button onclick="window.location.href='generated_pokemon'">Generate Random Pokémon!</button>
-            <div class="top_right"?>
-                <img src="https://www.freeiconspng.com/thumbs/pokeball-png/pokeball-transparent-png-2.png" alt="pokeball">
-            <div class="top_left">
-                <img src="https://i.pinimg.com/originals/78/b0/39/78b039608b29148029141885ae08f245.png" alt="eevee">
-            
-            </div>
+            <h2>POKÉMON GALORE!</h2>
+            <h2>Your Pokemon: {{pokemon_name}} (#{{id}})</h2>
+            <h2>{{pokemon_name}}'s Type(s): {{pokemon_type}}</h2>
+            <h2>{{pokemon_name}}'s Height: {{pokemon_height}} meters</h2>
+            <div class="top_gen_right"?>
+                <img src={{pokemon_image}} alt="pokemon">
+
+        </div>
+        <div class="h3">
+            <button class=button onclick="window.location.href='generated_pokemon'">Generate Random Pokémon!</button>
         </div>
     </body>
 </html>

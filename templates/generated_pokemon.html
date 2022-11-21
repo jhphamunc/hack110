@@ -5,6 +5,31 @@
         <h1 style="font-size:5vw">Pokémon Generated!</h1>
         <link rel="stylesheet" href="/static/bootstrap.min.css">
         <link rel="stylesheet" href="/static/styles.css">
+        <style>
+            .button {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 22px;
+              font-family: "Courier New", monospace;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #3c5aa6;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            
+            .button:hover {background-color: rgb(40, 62, 118)}
+            
+            .button:active {
+              background-color: #3c5aa6;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            </style>
     </head>
     <body>
         <!-- navigation bar -->
@@ -31,16 +56,25 @@
     </nav> -->
     
         <div class="container">
-            <h2>POKÉMON GALORE!</h2>
+            <h2>Gotta Catch Em All!</h2>
             <h2>Your Pokemon: {{pokemon_name}} (#{{id}})</h2>
-            <h2>{{pokemon_name}}'s Type(s): {{pokemon_type}}</h2>
+            <h2>{{pokemon_name}}'s Type: {{pokemon_type}}</h2>
             <h2>{{pokemon_name}}'s Height: {{pokemon_height}} meters</h2>
-            <div class="top_gen_right"?>
-                <img src={{pokemon_image}} alt="pokemon">
-
+            <h2>|------------------------------------|</h2>
+            <h2>A Challenger Approaches!</h2>
+            <h2>Enemy Pokemon: {{pokemon_name2}} (#{{id2}})</h2>
+            <h2>{{pokemon_name2}}'s Type: {{pokemon_type2}}</h2>
+            <h2>{{pokemon_name2}}'s Height: {{pokemon_height2}} meters</h2>
+            <h2>{{battle_result}}</h2>
+        <div>
+            <img id="pokemon1" src={{pokemon_image}} alt="pokemon">
+        <div>
+            <img id="pokemon2" src={{pokemon_image2}} alt="pokemon">
         </div>
         <div class="center">
-            <button onclick="window.location.href='generated_pokemon'">Generate Random Pokémon!</button>
+            <button class=button onclick="window.location.href='generated_pokemon'">Generate Random Pokémon!</button>
+        <div class="center">
+            <button class=button onclick="window.print({});return false;">Print!</button>
         </div>
     </body>
 </html>
